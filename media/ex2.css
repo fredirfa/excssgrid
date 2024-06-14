@@ -2,6 +2,7 @@
     font-family: "policetext";
     src: url(../font/WixMadeforDisplay-Regular.ttf);
 }
+
 @font-face {
     font-family: "policetitre";
     src: url(../font/BakbakOne-Regular.ttf);
@@ -10,13 +11,13 @@
 
 
 
-*{
+* {
     text-decoration: none !important;
 }
 
 
 :root {
-    
+
     --color-fondpage: #f2f1f4;
     --color-link: #eb5d1e;
     --color-menu: var(--color-fondpage);
@@ -31,7 +32,7 @@
 }
 
 a {
-color: var(--color-link) !important;
+    color: var(--color-link) !important;
     text-decoration: none;
     font-weight: normal;
 }
@@ -39,14 +40,25 @@ color: var(--color-link) !important;
 a:visited {
     color: var(--color-link);
     font-weight: bold;
-        text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
     color: #3C8EAE;
     font-weight: bold;
-        text-decoration: none;
+    text-decoration: none;
 }
+
+
+.h1,.h2,.h3,.h4,.h5,
+.h6,h1,h2,h3,h4,h5,
+h6 {
+    margin-top: 0;
+    margin-bottom:0;
+    font-weight:0;
+    line-height:0;
+}
+
 
 h1 {
     font-family: "policetitre";
@@ -56,45 +68,48 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: normal;
-    color: var(--color-link)!important;
+    color: var(--color-link) !important;
 }
 
 
-form{
-text-align: left;
- background-color: var(--color-fondcard);
+form {
+    text-align: left;
+    background-color: var(--color-fondcard);
     width: 100%;
     text-align: left;
     font-family: "policetext";
     color: var(--color-text);
-font-size:  25;
+    font-size: 25;
 
 }
-select{
+
+select {
     width: 100%;
     text-align: left;
 
 }
-input{
+
+input {
     width: 100%;
     text-align: left;
 
 }
+
 textarea {
     width: 100%;
     text-align: left;
 
 }
 
-.submit{
-        display: flex;
-            justify-content: flex-end;
+.submit {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 
 }
 
 input[type="submit"] {
-    background-color:var(--color-link);
+    background-color: var(--color-link);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -109,42 +124,44 @@ input[type="submit"] {
 
 
 
-article.p{
+article.p {
     font-family: "policetext";
-        display: block;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: normal;
-        color: var(--color-text);
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    color: var(--color-text);
 
 
 
 }
+
 .im {
-    place-items: center;    /* Centre le contenu */
+    place-items: center;
+    /* Centre le contenu */
 }
 
 
 #ecran {
 
-position: fixed;
-top: 0;
-left: 0;
-background-color: rgb(255, 255, 255);
-border: 2px solid rgb(158, 156, 156);
-padding: 5px;
-width: 60px;
-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(158, 156, 156);
+    padding: 5px;
+    width: 60px;
+    height: 60px;
 
-background-repeat: no-repeat;
-background-position: center center;
-z-index: 1001;
-    
-    
-    
-    
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1001;
+
+
+
+
 }
 
 
@@ -163,18 +180,19 @@ z-index: 1001;
 /*********************************************************************************/
 .headcontainer {
 
-display:grid;
-grid-template-rows: 1fr auto auto;
-/* background-color: aquamarine; */
-text-align: center;
-gap: 10px 20px;
-color: var(--color-link);
-font-family: 'policetitre', sans-serif;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    /* background-color: aquamarine; */
+    text-align: center;
+    gap: 10px 20px;
+    color: var(--color-link);
+    font-family: 'policetitre', sans-serif;
 
 
-/*********/
+    /*********/
 }
-.logo{ 
+
+.logo {
     /* background-color: blue; */
     grid-column: 1 / span 5;
     grid-row: 1;
@@ -185,12 +203,14 @@ font-family: 'policetitre', sans-serif;
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 .logo img {
-        max-width: 100%;
-         max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
-        
+
 }
+
 /*BOUTON MENU********/
 
 
@@ -198,18 +218,22 @@ font-family: 'policetitre', sans-serif;
     grid-column: 1;
     grid-row: 2;
 }
+
 .about {
     grid-column: 2;
     grid-row: 2;
 }
+
 .service {
     grid-column: 3;
     grid-row: 2;
 }
+
 .work {
     grid-column: 4;
     grid-row: 2;
 }
+
 .contact {
     grid-column: 5;
     grid-row: 2;
@@ -226,11 +250,14 @@ font-family: 'policetitre', sans-serif;
     place-items: center;
     width: auto;
     margin: 0 auto;
+position: relative;
+    text-align: center;
+
+
 }
 
 .pub img {
     max-width: 100%;
-
     object-fit: contain;
 
 }
@@ -238,27 +265,30 @@ font-family: 'policetitre', sans-serif;
 
 .overlay-text {
     color: var(--color-link);
-    position: absolute;
+position: absolute;
     top: 50%;
     /* Position verticale (au milieu) */
     left: 50%;
     /* Position horizontale (au milieu) */
     transform: translate(-50%, -100%);
 }
-.bouton{
+
+.bouton {
     background-color: var(--color-link);
     width: 100px;
-    font-size:small;
+    font-size: small;
     font-family: "policetext";
     color: var(--color-fondpage);
     margin: auto;
 
 }
-.bouton:hover{
+
+.bouton:hover {
     background-color: var(--color-fondpage);
     color: var(--color-link);
     margin: auto;
 }
+
 /*********************************************************************************/
 /*********************************************************************************/
 /*********************************************************************************/
@@ -267,70 +297,77 @@ main {
     grid-template-columns: repeat(2, 1fr);
 
 }
-.about1{
-display: grid;
+
+.about1 {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr auto auto); 
+    grid-template-rows: repeat(3, 1fr auto auto);
     /* background-color: aquamarine; */
     /* grid-auto-rows: auto; */
-    text-align:center;
+    text-align: center;
     color: var(--color-link);
     font-family: 'policetitre', sans-serif;
 
 
 }
-.totalpage{
-/* display: grid; */
-grid-column: 1 / span 3;
-grid-template-columns:  1fr;
+
+.totalpage {
+    /* display: grid; */
+    grid-column: 1 / span 3;
+    grid-template-columns: 1fr;
 
 
 }
+
 .totalform {
     /* display: grid; */
     grid-column: 1 / span 3;
     grid-template-columns: 1fr;
     background-color: var(--color-fondpage);
 }
-.article{
+
+.article {
 
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr auto auto);
-                /* background-color: aquamarine; */
+    /* background-color: aquamarine; */
 
     text-align: center;
-    font-family: 'policetext' ;
-    color:var(--color-text);
+    font-family: 'policetext';
+    color: var(--color-text);
     place-items: center;
     margin: 20px;
     margin-bottom: 0px;
     padding-bottom: 15px;
-    grid-column: 1 / 3;       /* Span de la colonne 1 à la colonne 3 (2 colonnes) */
+    grid-column: 1 / 3;
+    /* Span de la colonne 1 à la colonne 3 (2 colonnes) */
 }
 
-.containercard{
-display: grid;    
-grid-template-columns: 1fr 1fr;
-background-color: var(--color-fondcard)!important;
+.containercard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-fondcard) !important;
 }
+
 .containercard2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
-.card{
-    border:0!important;
-margin:10px ;
-background-color: var(--color-fondcard)!important;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(2, 1fr auto auto);
-text-align: center;
-font-family: 'policetext';
-color: var(--color-text);
-place-items: center;
-padding-top: 20px;
+.card {
+    border: 0 !important;
+    margin: 10px;
+    background-color: var(--color-fondcard) !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr auto auto);
+    text-align: center;
+    font-family: 'policetext';
+    color: var(--color-text);
+    place-items: center;
+    padding-top: 20px;
 }
+
 .card2 {
     margin-top: 10px;
     margin-left: 5px;
@@ -348,9 +385,10 @@ padding-top: 20px;
     max-width: 100%;
     object-fit: cover;
 }
-.icone  {
-width: 80px;
-height: 80px;
+
+.icone {
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -367,211 +405,39 @@ footer {
     display: grid;
     grid-template-columns: auto;
     padding-top: 10px;
-    
+
     color: var(--color-textmenu);
 
 }
-.copy{
+
+.copy {
     text-align: left;
     grid-column-start: 1;
 }
-.reseau{
+
+.reseau {
     display: grid;
-    grid-template-columns:  20% 20% 20%;
+    grid-template-columns: 20% 20% 20%;
     grid-column-end: 4;
     justify-self: end !important;
-    padding:  10px;
+    padding: 10px;
     column-gap: 20px;
 }
-a.rez{
-justify-self: end!important;
 
-}
-.rez2{
-justify-self: end !important;
+a.rez {
+    justify-self: end !important;
 
 }
 
-
-
-
-
-
-/* ecran medium (de 400px à 1023) */
-@media screen and (min-width: 400px) and (max-width: 1023px) {
-
-
-    #ecran {
-
-        background-image: url("/media/tablet.png");
-
-    }
-
-}
-
-/* ecran telephone (moins de 400px ) */
-@media screen and (max-width: 399px){
-
-
-    #ecran {
-
-        background-image: url("/media/mobile.png") ;
-    }
-
-
-.overlay-text {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-
-.containercard {
-    
-    grid-template-columns: 1fr ;
-    
-}
-
-.containercard2 {
-   
-    grid-template-columns: 1fr;
-}
-
-
-}
-/* ecran pc (+ de 1024) */
-@media screen and (min-width: 1024px)  and (max-width: 1600px){
-
-
-    #ecran {
-
-        background-image: url("/media/screen.png");
-
-    }
-
-
-
-.logo {
-    /* background-color: blue; */
-    grid-column: 1 ;
-    grid-row: 1;
-    width: 220px;
-    margin: 0 ;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.headcontainer {
-    grid-template-rows: 1fr auto ;
-    grid-template-columns: repeat(6,1fr);
-    /* background-color: aquamarine; */
-    text-align: center;
-    gap: 10px 20px;
-    color: var(--color-link);
-    font-family: 'policetitre', sans-serif;
-    
-}
-a{
-text-align: center;
-margin: auto;
-color: var(--color-link)!important;
-
-}
-h1 {
-    font-family: "policetitre";
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight:normal;
-    font-size: 50px!important;
-    color: var(--color-link) !important;
-}
-.pub {
-    /* background-color: blue; */
-    grid-column: 1 / span 6;
-    grid-row: 3;
-    place-items: center;
-    width: auto;
-    margin: 0 auto;
-}
-
-.overlay-text {
-    color: var(--color-link);
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    font-size: 20px ;
-}
-
-.containercard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: var(--color-fondcard) !important;
-}
-
-.icone {
-    width: 60px;
-    height: 60px;
-}
-.article {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr auto auto);
-    /* background-color: aquamarine; */
-    text-align: center;
-    font-family: 'policetext';
-    color: var(--color-text);
-    place-items: center;
-    grid-column: 1 / 3;
-}
-form.div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-}
-form.form{
-    display: grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: center;
-gap: 20px;
-
-
-}
-.double{
-grid-column: 2/3;
-    text-align: center;
+.rez2 {
+    justify-self: end !important;
 
 }
 
 
-footer {
-    background-color: var(--color-link);
-    display: grid;
-    grid-template-columns: auto;
-    padding-top: 20px;
-    color: var(--color-textmenu);
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-/* ecran pc (+ de 1024) */
-@media screen and (min-width: 1599px)  {
+/* ecran pc (+ de 1600) */
+@media screen and (min-width: 1601px) {
 
 
     #ecran {
@@ -584,3 +450,235 @@ footer {
 
 
 }
+
+/* ecran pc ( de 1024 à 1600) */
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+
+
+    #ecran {
+
+        background-image: url("/media/screen.png");
+
+    }
+
+
+
+    .logo {
+        /* background-color: blue; */
+        grid-column: 1;
+        grid-row: 1;
+        width: 220px;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .headcontainer {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: repeat(6, 1fr);
+        /* background-color: aquamarine; */
+        text-align: center;
+        gap: 10px 20px;
+        color: var(--color-link);
+        font-family: 'policetitre', sans-serif;
+
+    }
+
+    a {
+        text-align: center;
+        margin: auto;
+        color: var(--color-link) !important;
+
+    }
+
+    h1 {
+        font-family: "policetitre";
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: normal;
+        font-size: 50px !important;
+        color: var(--color-link) !important;
+    }
+
+    .pub {
+        /* background-color: blue; */
+        grid-column: 1 / span 6;
+        grid-row: 3;
+        place-items: center;
+        width: auto;
+        margin: 0 auto;
+    }
+
+
+
+    .containercard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: var(--color-fondcard) !important;
+    }
+
+    .icone {
+        width: 60px;
+        height: 60px;
+    }
+
+    .article {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr auto auto);
+        /* background-color: aquamarine; */
+        text-align: center;
+        font-family: 'policetext';
+        color: var(--color-text);
+        place-items: center;
+        grid-column: 1 / 3;
+    }
+
+    form.div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    form.form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 20px;
+
+
+    }
+
+    .double {
+        grid-column: 2/3;
+        text-align: center;
+
+    }
+
+
+    footer {
+        background-color: var(--color-link);
+        display: grid;
+        grid-template-columns: auto;
+        padding-top: 20px;
+        color: var(--color-textmenu);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ecran medium (de 345 à 1023) */
+@media screen and ( min-width:445px) and ( max-width:1023px) {
+
+#ecran {
+
+        background-image: url("/media/tablet.png");
+
+    }
+
+
+
+}
+
+
+/* ecran telephone (moins de 344px ) */
+@media screen and ( max-width: 344px) {
+
+
+    #ecran {
+
+        background-image: url("/media/mobile.png");
+
+
+
+    }
+
+
+
+
+    .containercard {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .containercard2 {
+
+        grid-template-columns: 1fr;
+    }
+
+
+.pub {
+    /* background-color: blue; */
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    place-items: center;
+    width: auto;
+    margin: 0 auto;
+}
+.totalpage {
+    /* display: grid; */
+    grid-column: 1 / span 2;
+    grid-template-columns: 1fr;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.headcontainer {
+    /* display: grid; */
+    grid-template-rows: 1fr;
+    /* background-color: aquamarine; */
+    text-align: center;
+    gap: 10px 10px;
+    color: var(--color-link);
+    font-family: 'policetitre', sans-serif;
+    font-size: 8px;
+}
+
+
+header {
+    display: grid;
+    unicode-bidi: isolate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
